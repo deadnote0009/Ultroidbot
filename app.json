@@ -25,7 +25,7 @@
             "required": false
        },
        "BOT_TOKEN": { 
-            "description": your bot token from @botfather.",
+            "description": "your bot token from @botfather.",
             "value": "",
             "required": false
         },
