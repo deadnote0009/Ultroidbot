@@ -21,6 +21,7 @@ profanitydetector
 psutil
 pypdf2>=1.26.0
 pytz
+nekos
 qrcode
 requests
 tabulate
