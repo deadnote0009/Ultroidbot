@@ -23,6 +23,11 @@
             "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
             "value": "",
             "required": false
+       },
+       "BOT_TOKEN": { 
+            "description": your bot token from @botfather.",
+            "value": "",
+            "required": false
         },
         "SESSION": {
             "description": "Session String (telethon or pyrogram) for your telegram user account. The userbot will NOT work without a session string!!",
