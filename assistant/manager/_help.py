@@ -10,11 +10,11 @@ from . import *
 START = """
 🪅 **Help Menu** 🪅
 
-✘  /start : Check I am Alive or not.
+✘  /start : Check I am Alive or dead.
 ✘  /help : Get This Message.
 ✘  /repo : Get Bot's Repo..
 
-🧑‍💻 Join **@TeamUltroid**
+🧑‍💻 Join **@itzyournil69**
 """
 
 ADMINTOOLS = """✘ **AdminTools** ✘
