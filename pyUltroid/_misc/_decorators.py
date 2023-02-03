@@ -165,7 +165,7 @@ def ultroid_cmd(
                 LOGS.exception(e)
                 date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
                 naam = get_display_name(chat)
-                ftext = "**Ultroid Client Error:** `Forward this to` @UltroidSupportChat\n\n"
+                ftext = "**Ultroid Client Error:** `Forward this to` @itzyournil\n\n"
                 ftext += "**Py-Ultroid Version:** `" + str(pyver)
                 ftext += "`\n**Ultroid Version:** `" + str(ult_ver)
                 ftext += "`\n**Telethon Version:** `" + str(telever)
@@ -195,7 +195,7 @@ def ultroid_cmd(
                         error_log = await asst.send_file(
                             udB.get_key("LOG_CHANNEL"),
                             file,
-                            caption="**Ultroid Client Error:** `Forward this to` @UltroidSupportChat\n\n",
+                            caption="**Ultroid Client Error:** `Forward this to` @itzyournil\n\n",
                         )
                 else:
                     error_log = await asst.send_message(
