@@ -575,17 +575,13 @@ async def sugg(event):
 
 @ultroid_cmd(pattern="ipinfo?(.*)")
 async def ipinfo(event):
-    xx = await eor(event, get_string("com_1"))
-    ip = event.text.split(" ")
+    ip = event.text.split()
     ipaddr = ""
     try:
-        ipaddr = ip[1]
-    except:
-        return await eod(xx, "`Give me an IP address you noob!`", time=5)
-    if ipaddr == "":
-        return
-    url = f"https://api.safone.me/ipinfo?ip={ipaddr}"
-    det = requests.get(url).json()
+        ipaddr = f"/{ip[1]}"
+    except IndexError:
+        ipaddr = ""
+    det = await async_searcher (f"https://api.safone.me/ipinfo?ip={ipaddr}", re_json=True)
     try:
         asn = det["asn"]
         city = det["city"]
