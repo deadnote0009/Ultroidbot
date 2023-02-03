@@ -19,5 +19,5 @@ async def dueha(e):
     if sm == "OFF":
         return
     if not sm:
-        sm = "Thanks for Adding me :)"
+        sm = "ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ :)"
     await e.reply(sm, link_preview=False)
