@@ -604,7 +604,8 @@ async def ipinfo(event):
         tor = det["tor"]
         wproxy = det["wproxy"]
         vpn = det["vpn"]
-        await xx.edit(
+        await eor(
+            event,
             """
 **IP Details Fetched.**
 
@@ -654,11 +655,10 @@ async def ipinfo(event):
                 
             ),
         )
-    except:
+    except BaseException:
         err = det["error"]["title"]
-        msg = det["error"]["messsage"]
-        await eod(xx, f"ERROR\n{err}\n{msg}")
-
+        msg = det["error"]["message"]
+        await event.eor(f"ERROR:\n{err}\n{msg}", time=5)
 
 @ultroid_cmd(
     pattern="cpy$",
