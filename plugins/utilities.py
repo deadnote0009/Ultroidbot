@@ -36,7 +36,7 @@
 • `{i}suggest <reply to message> or <poll title>`
     Create a Yes/No poll for the replied suggestion.
 
-• `{i}ipinfo <ipAddress>` : Get info about that IP address.
+• `{i}ipinfo <ipAddress>` : Get info about that IP address\n Modified by @itzyournil & @mobius_die.
 
 • `{i}cpy <reply to message>`
    Copy the replied message, with formatting. Expires in 24hrs.
@@ -573,52 +573,95 @@ async def sugg(event):
     await event.delete()
 
 
-@ultroid_cmd(pattern="ipinfo( (.*)|$)")
+@ultroid_cmd(pattern="ipinfo?(.*)")
 async def ipinfo(event):
-    ip = event.text.split()
+    xx = await eor(event, get_string("com_1"))
+    ip = event.text.split(" ")
     ipaddr = ""
     try:
-        ipaddr = f"/{ip[1]}"
-    except IndexError:
-        ipaddr = ""
-    det = await async_searcher(f"https://ipinfo.io{ipaddr}/geo", re_json=True)
+        ipaddr = ip[1]
+    except:
+        return await eod(xx, "`Give me an IP address you noob!`", time=5)
+    if ipaddr == "":
+        return
+    url = f"https://api.safone.me/ipinfo?ip={ipaddr}"
+    det = requests.get(url).json()
     try:
-        ip = det["ip"]
+        asn = det["asn"]
         city = det["city"]
-        region = det["region"]
+        code = det["code"]
         country = det["country"]
-        cord = det["loc"]
-        try:
-            zipc = det["postal"]
-        except KeyError:
-            zipc = "None"
-        tz = det["timezone"]
-        await eor(
-            event,
+        zip = det["zip"]
+        ctype = det["ctype"]
+        host = det["host"]
+        ip = det["ip"]
+        isp = det["isp"]
+        latitude = det["latitude"]
+        longitude = det["longitude"]
+        org = det["org"]
+        pproxy = det["pproxy"]
+        region = det["region"]
+        risk = det["risk"]
+        score = det["score"]
+        robot = det["robot"]
+        server = det["server"]
+        tor = det["tor"]
+        wproxy = det["wproxy"]
+        vpn = det["vpn"]
+        await xx.edit(
             """
 **IP Details Fetched.**
 
-**IP:** `{}`
-**City:** `{}`
-**Region:** `{}`
-**Country:** `{}`
-**Co-ordinates:** `{}`
-**Postal Code:** `{}`
-**Time Zone:** `{}`
+  **ASN:** `{}`
+  **City:** `{}` 
+  **Code:** `{}`
+  **Country:** `{}`
+  **Zip:** `{}`
+  **Ctype:** `{}`
+  **Host:** `{}`
+  **IP:** `{}`
+  **ISP:** `{}`
+  **Latitude:** `{}`
+  **Longitude:** `{}`
+  **org:** `{}`
+  **pproxy:** `{}`
+  **Region:** `{}`
+  **Risk:** `{}`
+  **Score:** `{}`
+  **Robot:** `{}`
+  **Server:** `{}`
+  **Tor:** `{}`
+  **wproxy:** `{}`
+  **Vpn:** `{}`
 """.format(
-                ip,
+                asn,
                 city,
-                region,
+                code,
                 country,
-                cord,
-                zipc,
-                tz,
+                zip,
+                ctype,
+                host,
+                ip,
+                isp,
+                latitude,
+                longitude,
+                org,
+                pproxy,
+                region,
+                risk,
+                score,
+                robot,
+                server,
+                tor,
+                wproxy,
+                vpn,
+                
             ),
         )
-    except BaseException:
+    except:
         err = det["error"]["title"]
-        msg = det["error"]["message"]
-        await event.eor(f"ERROR:\n{err}\n{msg}", time=5)
+        msg = det["error"]["messsage"]
+        await eod(xx, f"ERROR\n{err}\n{msg}")
 
 
 @ultroid_cmd(
