@@ -41,6 +41,10 @@
             "description": "Redis endpoint password, from redislabs.com",
             "value": ""
         },
+        "MONGO_URI": {
+            "description": "Get Mongo DB URI from mongodb.com",
+            "value": ""
+        },
         "HEROKU_API": {
             "description": "Heroku API token. Mandatory for Heroku Deploy...",
             "value": "",
