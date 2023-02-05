@@ -35,15 +35,18 @@
         },
         "REDIS_URI": {
             "description": "Redis endpoint URL, from redislabs.com",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "REDIS_PASSWORD": {
             "description": "Redis endpoint password, from redislabs.com",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "MONGO_URI": {
-            "description": "Get Mongo DB URI from mongodb.com",
-            "value": ""
+            "description": "Get Mongo DB URI from mongodb.com. You have to add redis db or mongo db for deploy. we're just remove it from mandatory options",
+            "value": "",
+            "required": false
         },
         "HEROKU_API": {
             "description": "Heroku API token. Mandatory for Heroku Deploy...",
