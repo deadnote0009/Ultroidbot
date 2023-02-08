@@ -467,7 +467,7 @@ async def abs_rmbg(event):
 )
 async def telegraphcmd(event):
     xx = await event.eor(get_string("com_1"))
-    match = event.pattern_match.group(1).strip() or "Ultroid"
+    match = event.pattern_match.group(1).strip() or "DARK"
     reply = await event.get_reply_message()
     if not reply:
         return await xx.eor("`Reply to Message.`")
