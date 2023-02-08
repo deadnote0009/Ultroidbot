@@ -17,12 +17,12 @@
         "API_ID": {
             "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
             "value": "", 
-            "required": false
+            "required": true
         },
         "API_HASH": {
             "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
             "value": "",
-            "required": false
+            "required": true
        },
        "BOT_TOKEN": { 
             "description": "your bot token from @botfather.",
@@ -36,12 +36,12 @@
         "REDIS_URI": {
             "description": "Redis endpoint URL, from redislabs.com",
             "value": "",
-            "required": false
+            "required": true
         },
         "REDIS_PASSWORD": {
             "description": "Redis endpoint password, from redislabs.com",
             "value": "",
-            "required": false
+            "required": true
         },
         "MONGO_URI": {
             "description": "Get Mongo DB URI from mongodb.com. You have to add redis db or mongo db for deploy. we're just remove it from mandatory options",
@@ -51,12 +51,12 @@
         "HEROKU_API": {
             "description": "Heroku API token. Mandatory for Heroku Deploy...",
             "value": "",
-            "required": false
+            "required": true
         },
         "HEROKU_APP_NAME": {
             "description": "Name of your Heroku app, given in the first blank on this page. To be added if deploying to heroku ONLY.",
             "value": "",
-            "required": false
+            "required": true
         }
     },
     "formation": {
