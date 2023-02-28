@@ -137,9 +137,9 @@ autopic_4: "AUTOPIC was not in use !!"
 autopic_5: "AUTOPIC Stopped!"
 
 # inline
-inline_1: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/itzyournil69t)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nPʟᴜɢɪɴs ~ {}**"
-inline_2: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/itzyournil69)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}**"
-inline_3: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/yournil69)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}\n\nDᴏ **`.setdb ADDONS True`** ᴀɴᴅ ʀᴇsᴛᴀʀᴛ ᴛᴏ ɢᴇᴛ ᴀᴅᴅᴏɴs.**"
+inline_1: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/UltroidSupportChat)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nPʟᴜɢɪɴs ~ {}**"
+inline_2: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/UltroidSupportChat)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}**"
+inline_3: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/UltroidSupportChat)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}\n\nDᴏ **`.setdb ADDONS True`** ᴀɴᴅ ʀᴇsᴛᴀʀᴛ ᴛᴏ ɢᴇᴛ ᴀᴅᴅᴏɴs.**"
 inline_4: "** Bᴏᴛ Oғ {}\n\nMᴀɪɴ Mᴇɴᴜ\n\nPʟᴜɢɪɴs ~ {}\nAᴅᴅᴏɴs ~ {}\nTᴏᴛᴀʟ Cᴏᴍᴍᴀɴᴅs ~ {}**"
 inline_5: "**Mᴇɴᴜ Hᴀs Bᴇᴇɴ Cʟᴏsᴇᴅ**"
 inline_6: "**Voice Chat Help Menu for {}**\n**Available Commands:** `{}`\n\n@TeamUltroid"
@@ -159,20 +159,20 @@ wspr_4: "User {} Not Found\nSearch Again"
 wspr_5: "You Can't do this"
 
 # afk
-afk_1: "**I AM BACK ONLINE **\n\nWas away for ~ `{}`"
-afk_2: "#AFK\nSet AFK mode to False.\nWas OFFLINE since ~ `{}`"
-afk_3: "**I'm currently OFFLINE.**\nLast seen `{}` ago.\n\n**Reason:** `{}`"
-afk_4: "**I'm currently OFFLINE.**\n\nLast seen `{}` ago."
-afk_5: "**I'm Going OFFLINE.**\n\n**Reason:** `{}`"
-afk_6: "**I'm Going OFFLINE.**"
+afk_1: "** ɪ ᴀᴍ ʙᴀᴄᴋ ᴍʏ ᴠɪʀᴛᴜᴀʟ ᴡᴏʀʟᴅ 🥰 **\n\n ɪ ᴡᴀꜱ ᴀᴡᴀʏ ꜰʀᴏᴍ ʏᴏᴜ 🥺  `{}` min ago "
+afk_2: "#AFK\nSet 𝕆𝔽𝕃𝕀ℕ𝔼 mode to False.\n ɪ ᴡᴀꜱ ᴏꜰʟɪɴᴇ ꜱɪɴᴄᴇ ~ `{}  min ago`\n\n**ℝ𝕖𝕒𝕤𝕠𝕟 :** `{}`"
+afk_3: "**𝚜𝚘𝚛𝚛𝚢 , 🥺 ɪ'ᴍ ᴄᴜʀʀᴇɴᴛʟʏ ᴏꜰꜰʟɪɴᴇ 💔 .**\nLast seen `{}`min ago.\n\n**Reason:** `{}`"
+afk_4: "**𝚜𝚘𝚛𝚛𝚢 , 🥺 ɪ'ᴍ ᴄᴜʀʀᴇɴᴛʟʏ ᴏꜰꜰʟɪɴᴇ  💔.**\n\n ʟᴀꜱᴛ ꜱᴇᴇɴ `{}` min ago."
+afk_5: "** 𝕀'𝕞 𝔾𝕠𝕚𝕟𝕘 🏃‍♂️🅾🅵🅵🅻🅸🅽🅴 😔 😔.**\n\n**ℝ𝕖𝕒𝕤𝕠𝕟 :** `{}`"
+afk_6: "**𝕀'𝕞 𝔾𝕠𝕚𝕟𝕘 𝐎𝐅𝐅𝐋𝐈𝐍𝐄 💔.**"
 
 # bot
-bot_1: "Hey,  ."
+bot_1: "Hey,  I am alive."
 bot_2: "Stats"
 bot_3: "Repo"
 bot_4: "Support"
 bot_5: "• `Restarting...`"
-alive_1: "**LOADING.......**\n\n**{}**\n\n✵ **Owner** - `{}`\n✵ **deploy** - `{}`\n✵ **Py-Ultroid** - `{}`\n✵ **UpTime** - `{}`\n✵ **Python** - `{}`\n✵ **Telethon** - `{}`\n✵ **`"
+alive_1: "** © 🇧🇩 Uʟᴛʀᴏɪᴅ✘Sᴜᴘʀᴇᴍᴀᴄʏ ™**\n\n**{}**\n\n┏━━━━━━━━━━━━━━━━━━\n┣**✿ ᴍʏ ᴏᴡɴᴇʀ 👑 {}  **\n┣**𒆜 Vᴇʀsɪᴏɴ - {}**\n┣**𒆜 UᴘTɪᴍᴇ - {}**\n┣**𒆜  Pʏᴛʜᴏɴ✘ - {}**\n┣**𒆜 Tᴇʟᴇᴛʜᴏɴ  - {}**\n  [ ⚠️ ɪ ᴀᴍ ʜᴇʀᴇ ꜰᴏʀ ᴏɴʟʏ ᴇɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛ ᴘᴜʀᴘᴏꜱᴇ ᴀɴᴅ ɪ ᴅᴏɴ'ᴛ ꜱᴜᴘᴘᴏʀᴛ ᴀɴʏ ɪʟʟᴇɢᴀʟ ᴀᴄᴛɪᴠɪᴛɪᴇꜱ ....] ┗━━━━━━━━━━━━━━━━━━"
 log: "**Heroku** Ultroid Logs.\nPasted [here]({}) too!"
 ping: "**Pong !!** `{}ms`\n**Uptime** - `{}`"
 usage: "**⚙️ Dyno Usage ⚙️**:\n\n-> **Dyno usage for** `{}`:\n  •  **{}h**  **{}m |** `[{}%]`\n-> **Dyno hours quota remaining this month**:\n  •  **{}h**  **{}m |** `[{}%]`\n\n**Total Disk Space**: `{}`\n**Used**: `{}`\n**Free**: `{}`\n\n**📊 Data Usage 📊**\n**Upload**: `{}`\n**Down**: `{}`\n\n**CPU**: `{}%`\n**RAM**: `{}%`\n**DISK**: `{}%`"
@@ -227,7 +227,7 @@ chats_1: "`Cant delete this chat.`"
 chats_2: "`I m not an admin`"
 chats_3: "#Deleted\nDeleted {}"
 chats_4: "Your [{}]({}) Group Made Boss!"
-chats_5: "Join @TeamUltroid"
+chats_5: "Join @itzyournil"
 chats_6: "Your {} Group/Channel Has been made Boss!"
 
 # clean action
@@ -376,6 +376,7 @@ nightm_5: "Something Went Wrong"
 # pmpermit
 pmperm_1: "Please wait for me to respond or you will be blocked and reported as spam!!"
 pmperm_2: "Eyy, I told you not to spam!\nYou've been blocked and reported, for now."
+pmperm_2: "Great!\nNow go to sleep until my master unblockes you."
 pmperm_3: "Reply to someone's message or try this command in private."
 
 # schedule_msg
@@ -541,7 +542,7 @@ games_6: "**• Starting Quiz in 5 secs.** \n**• Level :** {}\n**• Qs :** {}
 
 # callbackstuffs
 clst_1: "`Userbot dyno build in progress, please wait for it to complete.`"
-clst_2: "`Successfully Updated!\nRestarting, please wait...`"
+clst_2: "`Successfully updated and back virtual world!\nRestarting, please wait baby I am back soon...`"
 clst_3: "■ Generating Changelogs..."
 clst_4: "Something went wrong..."
 clst_5: "Done!"
