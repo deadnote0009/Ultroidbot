@@ -6,34 +6,24 @@
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 """
 ✘ Commands Available -
-
 • `{i}a` or `{i}approve`
     Approve someone to PM.
-
 • `{i}da` or `{i}disapprove`
     Disapprove someone to PM.
-
 • `{i}block`
     Block someone.
-
 • `{i}unblock` | `{i}unblock all`
     Unblock someone.
-
 • `{i}nologpm`
     Stop logging messages from the user.
-
 • `{i}logpm`
     Start logging messages from the user.
-
 • `{i}startarchive`
     Archive new PMs.
-
 • `{i}stoparchive`
     Don't archive new PMs.
-
 • `{i}cleararchive`
     Unarchive all chats.
-
 • `{i}listapproved`
    List all approved PMs.
 """
@@ -74,10 +64,10 @@ UND = get_string("pmperm_1")
 UNS = get_string("pmperm_2")
 NO_REPLY = get_string("pmperm_3")
 
-UNAPPROVED_MSG = "**PMSecurity of {ON}!**\n\n{UND}\n\nYou have {warn}/{twarn} warnings!"
+UNAPPROVED_MSG = "**Message From {ON}!**\n\n{UND}\n\nYou have {warn}/{twarn} warnings!"
 if udB.get_key("PM_TEXT"):
     UNAPPROVED_MSG = (
-        "**PMSecurity of {ON}!**\n\n"
+        "**Message From {ON}!**\n\n"
         + udB.get_key("PM_TEXT")
         + "\n\nYou have {warn}/{twarn} warnings!"
     )
@@ -423,7 +413,7 @@ if udB.get_key("PMSETTING"):
                 await asst.edit_message(
                     int(udB.get_key("LOG_CHANNEL")),
                     _not_approved[user.id],
-                    f"#APPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was approved to PM you!</code>",
+                    f"#APPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was approved To PM </code>",
                     buttons=[
                         Button.inline("Disapprove PM", data=f"disapprove_{user.id}"),
                         Button.inline("Block", data=f"block_{user.id}"),
@@ -433,7 +423,7 @@ if udB.get_key("PMSETTING"):
             except KeyError:
                 _not_approved[user.id] = await asst.send_message(
                     int(udB.get_key("LOG_CHANNEL")),
-                    f"#APPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was approved to PM you!</code>",
+                    f"#APPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was approved To PM</code>",
                     buttons=[
                         Button.inline("Disapprove PM", data=f"disapprove_{user.id}"),
                         Button.inline("Block", data=f"block_{user.id}"),
@@ -456,7 +446,7 @@ if udB.get_key("PMSETTING"):
         if user.id in DEVLIST:
             return await eor(
                 e,
-                "`Lol, He is my Developer\nHe Can't Be DisApproved.`",
+                "`lol, stupid, you can never block my ★彡[ᴅᴇᴠᴇʟᴏᴘᴇʀ]彡★ \n𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 Is 𝚊𝚕𝚠𝚊𝚢𝚜 𝚊𝚙𝚙𝚛𝚘𝚟𝚎𝚍  😎 .`",
             )
         if is_approved(user.id):
             disapprove_user(user.id)
@@ -469,7 +459,7 @@ if udB.get_key("PMSETTING"):
                 await asst.edit_message(
                     int(udB.get_key("LOG_CHANNEL")),
                     _not_approved[user.id],
-                    f"#DISAPPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was disapproved to PM you.</code>",
+                    f"#DISAPPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was disapproved to PM </code>",
                     buttons=[
                         Button.inline("Approve PM", data=f"approve_{user.id}"),
                         Button.inline("Block", data=f"block_{user.id}"),
@@ -479,7 +469,7 @@ if udB.get_key("PMSETTING"):
             except KeyError:
                 _not_approved[user.id] = await asst.send_message(
                     int(udB.get_key("LOG_CHANNEL")),
-                    f"#DISAPPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was disapproved to PM you.</code>",
+                    f"#DISAPPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was disapproved to PM .</code>",
                     buttons=[
                         Button.inline("Approve PM", data=f"approve_{user.id}"),
                         Button.inline("Block", data=f"block_{user.id}"),
@@ -652,7 +642,7 @@ async def apr_in(event):
         except BaseException:
             return await event.delete()
         await event.edit(
-            f"#APPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was approved to PM you!</code>",
+            f"#APPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was approved to PM!</code>",
             buttons=[
                 [
                     Button.inline("Disapprove PM", data=f"disapprove_{uid}"),
@@ -690,7 +680,7 @@ async def disapr_in(event):
         except BaseException:
             return await event.delete()
         await event.edit(
-            f"#DISAPPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was disapproved to PM you!</code>",
+            f"#DISAPPROVED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was disapproved to PM!</code>",
             buttons=[
                 [
                     Button.inline("Approve PM", data=f"approve_{uid}"),
@@ -729,7 +719,7 @@ async def blck_in(event):
     except BaseException:
         return await event.delete()
     await event.edit(
-        f"BLOCKED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was blocked!</code>",
+        f"BLOCKED\n\n<b>{inline_mention(user, html=True)}</b> [<code>{user.id}</code>] <code>was blocked You !</code>",
         buttons=Button.inline("UnBlock", data=f"unblock_{uid}"),
         parse_mode="html",
     )
