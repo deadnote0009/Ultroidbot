@@ -15,7 +15,7 @@ services:
         # value: redis_uri
         sync: false
       - key: REDIS_PASS
-        # value: REDIS_PASS
+        # value: REDIS_PASSWORD
         sync: false
       - key: API_ID
         # value: API_ID
