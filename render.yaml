@@ -1,6 +1,6 @@
 services:
   # A Docker web service
-  - type: worker
+  - type: web
     name: Ultroid-NIL
     env: docker
     region: singapore 
@@ -14,7 +14,7 @@ services:
       - key: REDIS_URI
         # value: redis_uri
         sync: false
-      - key: REDIS_PASS
+      - key: REDIS_PASSWORD
         # value: REDIS_PASSWORD
         sync: false
       - key: API_ID
