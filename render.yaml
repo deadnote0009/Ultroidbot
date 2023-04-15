@@ -23,6 +23,6 @@ services:
       - key: API_HASH
         # value: API_HASH
         sync: false
-      - key: STRING
+      - key: SESSION
         # value: STRING
         sync: false
