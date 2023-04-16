@@ -1,10 +1,10 @@
 services:
   # A Docker web service
-  - type: web
+  - type: worker
     name: Ultroid-NIL
     env: docker
     region: singapore 
-    plan: free
+    plan: starter
     envVars:
       - key: PORT
         value: 80
