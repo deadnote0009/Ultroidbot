@@ -10,17 +10,17 @@
         "ultroid"
     ],
     "repository": "https://github.com/nahid-nil/Ultroidbot",
-    "website": "https://ultroid.tech",
-    "success_url": "https://t.me/TeamUltroid",
+    "website": "",
+    "success_url": "",
     "stack": "container",
     "env": {
         "API_ID": {
-            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
+            "description": "You api id, from my.telegram.org .",
             "value": "", 
             "required": true
         },
         "API_HASH": {
-            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
+            "description": "You api hash, from my.telegram.org .",
             "value": "",
             "required": true
        },
