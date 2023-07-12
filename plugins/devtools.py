@@ -50,13 +50,15 @@ async def _(e):
     x, y = await bash("neofetch|sed 's/\x1B\\[[0-9;\\?]*[a-zA-Z]//g' >> neo.txt")
     if y and y.endswith("NOT_FOUND"):
         return await xx.edit(f"Error: `{y}`")
-    with open("neo.txt", "r") as neo:
+    with open("neo.txt", "r", encoding="utf-8") as neo:
         p = (neo.read()).replace("\n\n", "")
     haa = await Carbon(code=p, file_name="neofetch", backgroundColor=choice(ATRA_COL))
-    await e.reply(file=haa)
-    await xx.delete()
+    if isinstance(haa, dict):
+        await xx.edit(f"`{haa}`")
+    else:
+        await e.reply(file=haa)
+        await xx.delete()
     remove("neo.txt")
-
 
 @ultroid_cmd(pattern="bash", fullsudo=True, only_devs=True)
 async def _(event):
