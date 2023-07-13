@@ -347,8 +347,8 @@ async def lastname(steal):
     message = await steal.get_reply_message()
     if message:
         user_id = message.sender.id
-    chat = "@SangMataInfo_bot"
-    id = f"/search_id {user_id}"
+    chat = "@SangMata_BOT"
+    id = f"{user_id}"
     lol = await steal.eor(get_string("com_1"))
     try:
         async with steal.client.conversation(chat) as conv:
@@ -358,7 +358,7 @@ async def lastname(steal):
                 respond = await conv.get_response()
                 responds = await conv.get_response()
             except YouBlockedUserError:
-                return await lol.edit("Please unblock @sangmatainfo_bot and try again")
+                return await lol.edit("Please unblock @SangMata_BOT and try again")
             if (
                 (response and response.text == "No records found")
                 or (respond and respond.text == "No records found")
