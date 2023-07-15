@@ -12,6 +12,8 @@
 • `{i}pntrst <link/id>`
     Download and send pinterest pins
 
+• `{i}tik <link/id>`
+    Download and send tiktok video 
 • `{i}gadget <search query>`
     Gadget Search from Telegram.
 
@@ -71,6 +73,26 @@ async def pinterest(e):
         _soup = bs(soup, "html.parser").find("table").tbody.find_all("tr")
     except BaseException:
         return await e.eor("`Wrong link or private pin.`", time=5)
+    file = _soup[1] if len(_soup) > 1 else _soup[0]
+    file = file.td.a["href"]
+    await e.client.send_file(e.chat_id, file, caption=f"Pin:- {m}")
+
+@ultroid_cmd(
+    pattern="tik( (.*)|$)",
+)
+async def pinterest(e):
+    m = e.pattern_match.group(1).strip()
+    if not m:
+        return await e.eor("`Give tiktok link.`", time=3)
+    soup = await async_searcher(
+        "https://www.expertstool.com/tiktok-video-downloader/",
+        data={"url": m},
+        post=True,
+    )
+    try:
+        _soup = bs(soup, "html.parser").find("table").tbody.find_all("tr")
+    except BaseException:
+        return await e.eor("`Wrong link or private .`", time=5)
     file = _soup[1] if len(_soup) > 1 else _soup[0]
     file = file.td.a["href"]
     await e.client.send_file(e.chat_id, file, caption=f"Pin:- {m}")
