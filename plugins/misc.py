@@ -14,6 +14,7 @@
 
 • `{i}tik <link/id>`
     Download and send tiktok video 
+
 • `{i}gadget <search query>`
     Gadget Search from Telegram.
 
