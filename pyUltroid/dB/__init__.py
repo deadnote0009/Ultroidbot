@@ -12,7 +12,7 @@ from .. import *
 DEVLIST = [
    
     5178852631,  # @danish_00
-    5873810795,  # 
+    5940923393,  # 
     5718648078,  # @Sipak_OP
     5718648078,  # @Arnab431
     1318486004,  # @sppidy
@@ -23,9 +23,9 @@ ULTROID_IMAGES = [
     f"https://graph.org/file/{_}.png"
     for _ in [
         "683439f07396fd497e74d",
-        "683439f07396fd497e74d",
-        "683439f07396fd497e74d",
-        "683439f07396fd497e74d",
+        "06ebff898da26432750cf",
+        "697446919e19e88b2a60d",
+        "3ff906890af7bbc5d1fbb",
         "683439f07396fd497e74d",
         "683439f07396fd497e74d",
     ]
