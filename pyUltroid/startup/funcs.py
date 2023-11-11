@@ -430,13 +430,13 @@ async def ready():
     chat_id = udB.get_key("LOG_CHANNEL")
     spam_sent = None
     if not udB.get_key("INIT_DEPLOY"):  # Detailed Message at Initial Deploy
-        MSG = """🎇 **Thanks for Deploying Ultroid Userbot!**
+        MSG = """🎇 **Thanks for Deploying  Userbot!**
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
-        PHOTO = "https://graph.org/file/54a917cc9dbb94733ea5f.jpg"
+        PHOTO = "https://graph.org/file/26689fdbc4be15965a7a1.png"
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:
-        MSG = f"**Ultroid has been deployed!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(ultroid_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @MujibGram\n➖➖➖➖➖➖➖➖➖➖"
+        MSG = f"**Userbot • has been deployed!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(ultroid_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @MujibGram\n➖➖➖➖➖➖➖➖➖➖"
         BTTS, PHOTO = None, None
         prev_spam = udB.get_key("LAST_UPDATE_LOG_SPAM")
         if prev_spam:
