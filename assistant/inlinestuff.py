@@ -33,7 +33,7 @@ from . import _ult_cache
 SUP_BUTTONS = [
     [
         Button.url("• Repo •", url="https://github.com/deadnote0009/Ultroidbot"),
-        Button.url("• Support •", url="t.me/UltroidSupportChat"),
+        Button.url("• Support •", url="t.me/MujibGram"),
     ],
 ]
 

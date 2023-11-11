@@ -38,7 +38,7 @@ STRINGS = {
   - `{HNDLR}help`
   - `{HNDLR}cmds`""",
     5: """• **For Any Other Query or Suggestion**
-  - Move to **@UltroidSupportChat**.
+  - Move to **@MujibGram**.
 
 • Thanks for Reaching till END.""",
 }

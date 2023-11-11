@@ -17,7 +17,7 @@ REPOMSG = """
 • **ULTROID USERBOT** •\n
 • Repo - [Click Here](https://github.com/deadnote0009/Ultroidbot)
 • Addons - [Click Here](https://github.com/deadnote0009/UltroidbotAddons)
-• Support - @UltroidSupportChat
+• Support - @MujibGram
 """
 
 RP_BUTTONS = [
@@ -25,7 +25,7 @@ RP_BUTTONS = [
         Button.url(get_string("bot_3"), "https://github.com/deadnote0009/Ultroidbot"),
         Button.url("Addons", "https://github.com/deadnote0009/UltroidbotAddons"),
     ],
-    [Button.url("Support Group", "t.me/UltroidSupportChat")],
+    [Button.url("Support Group", "t.me/MujibGram")],
 ]
 
 ULTSTRING = """🎇 **Thanks for Deploying Ultroid Userbot!**
