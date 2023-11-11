@@ -70,7 +70,7 @@ def ULTPIC():
 
 buttons = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/nahid-nil/Ultroidbot/tree/main"),
+        Button.url(get_string("bot_3"), "https://github.com/deadnote0009/Ultroidbot//tree/main"),
         Button.url(get_string("bot_4"), "t.me/MujibGram"),
     ]
 ]
@@ -335,7 +335,7 @@ async def _(e):
         )
     else:
         await xx.edit(
-            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/nahid-nil/Ultroidbot/tree/main/{branch}">[{branch}]</a></strong>',
+            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/deadnote0009/Ultroidbot//tree/main/{branch}">[{branch}]</a></strong>',
             parse_mode="html",
             link_preview=False,
         )

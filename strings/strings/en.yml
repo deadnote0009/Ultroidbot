@@ -419,7 +419,7 @@ upd_2: "`Oops.. Updater cannot continue due to some problems.`\n\n**LOGTRACE:**\
 upd_3: "**New UPDATE available for [[{}]]({}/tree/{}):\n\nCHANGELOG**\n\n{}"
 upd_4: "`Changelog is too big, view the file to see it.`"
 upd_5: "Click the below button to update."
-upd_6: "\n`Your BOT is`  **up-to-date**  `with`  **[[{}]]({}/tree/{})**\n"
+upd_6: "\n`Your BOT is`  **up-to-date**  `with`  **[[{}]]({}/https://graph.org/file/26689fdbc4be15965a7a1.png{})**\n"
 upd_7: "`Fast Soft Updating...`"
 
 # upload download
