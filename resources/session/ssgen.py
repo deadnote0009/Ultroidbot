@@ -135,7 +135,7 @@ def pyro_session():
         ss = pyro.export_session_string()
         pyro.send_message(
             "me",
-            f"`{ss}`\n\nAbove is your Pyrogram Session String for @TheUltroid. **DO NOT SHARE it.**",
+            f"`{ss}`\n\nAbove is your Pyrogram Session String for @MujibGram. **DO NOT SHARE it.**",
         )
         print("Session has been sent to your saved messages!")
         exit(0)
