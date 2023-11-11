@@ -15,7 +15,7 @@ from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, ultroid_cmd
 
 REPOMSG = """
 • **ULTROID USERBOT** •\n
-• Repo - [Click Here](https://github.com/TeamUltroid/Ultroid)
+• Repo - [Click Here](https://github.com/deadnote0009/Ultroidbot)
 • Addons - [Click Here](https://github.com/TeamUltroid/UltroidAddons)
 • Support - @UltroidSupportChat
 """
