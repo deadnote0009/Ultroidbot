@@ -1,7 +1,7 @@
 # Ultroid - UserBot
 # Copyright (C) 2021-2022 TeamUltroid
 #
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
+# This file is a part of < https://github.com/deadnote0009/Ultroidbot/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
@@ -16,14 +16,14 @@ from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, ultroid_cmd
 REPOMSG = """
 • **ULTROID USERBOT** •\n
 • Repo - [Click Here](https://github.com/deadnote0009/Ultroidbot)
-• Addons - [Click Here](https://github.com/TeamUltroid/UltroidAddons)
+• Addons - [Click Here](https://github.com/deadnote0009/UltroidbotAddons)
 • Support - @UltroidSupportChat
 """
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/TeamUltroid/Ultroid"),
-        Button.url("Addons", "https://github.com/TeamUltroid/UltroidAddons"),
+        Button.url(get_string("bot_3"), "https://github.com/deadnote0009/Ultroidbot"),
+        Button.url("Addons", "https://github.com/deadnote0009/UltroidbotAddons"),
     ],
     [Button.url("Support Group", "t.me/UltroidSupportChat")],
 ]
