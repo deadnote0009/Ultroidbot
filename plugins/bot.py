@@ -243,7 +243,7 @@ async def _(event):
             code=code,
             backgroundColor=choice(ATRA_COL),
         )
-        await event.reply("**Ultroid Logs.**", file=file)
+        await event.reply("**Userbot Logs.**", file=file)
     elif opt == "open":
         with open("ultroid.log", "r") as f:
             file = f.read()[-4000:]

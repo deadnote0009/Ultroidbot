@@ -219,7 +219,7 @@ if run_as_module:
             ult.chat_id,
             file=file,
             thumb=ULTConfig.thumb,
-            caption="**Ultroid Logs.**",
+            caption="**Userbot Logs.**",
         )
 
     async def updateme_requirements():
