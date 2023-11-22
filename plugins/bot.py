@@ -245,7 +245,7 @@ async def _(event):
         )
         await event.reply("**Userbot Logs.**", file=file)
     elif opt == "open":
-        with open("ultroid.log", "r") as f:
+        with open("Userbot.log", "r") as f:
             file = f.read()[-4000:]
         return await event.eor(f"`{file}`")
     else:
